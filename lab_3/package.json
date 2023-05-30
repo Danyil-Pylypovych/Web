@@ -1,0 +1,16 @@
+{
+  "name": "labs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lab3-script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danyil Pylypovych",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "prompt-sync-history": "^1.0.1",
+    "readline-sync": "^1.4.10"
+  }
+}
