@@ -1,0 +1,52 @@
+$content-font: Arial;
+
+@mixin Horizontal(){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top-teachers__filter {
+  @include Horizontal();
+  justify-content: flex-start;
+  
+
+  .filter__options {
+    @include Horizontal();
+            align-items: center;
+            *{
+                padding: 5px;
+            }
+            border-right: 1.7px dotted rgb(83,83,83);
+            padding: 0.5vw 1vw 0.5vw 1vw;
+            font-family: $content-font;
+            font-weight: bolder;
+            color: rgb(120,120,120);
+            font-size: 13px;
+            &:last-of-type{
+                border-right: none;
+            }
+
+            select{
+              padding: 8px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              resize: vertical;
+          }
+          &:hover{
+              color: black;
+          }
+        }
+
+  .checkbox {
+    input {
+      margin-right: .5rem;
+      accent-color: #4c4c4c;
+    }
+  }
+
+  .checkbox:hover {
+    color: black;
+  }
+}
+

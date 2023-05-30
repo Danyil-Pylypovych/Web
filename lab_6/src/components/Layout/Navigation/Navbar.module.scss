@@ -1,0 +1,62 @@
+$color-site: #F75C49;
+
+@mixin Horizontal(){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a {
+  cursor: pointer;
+}
+Button{
+  font-size: 16px;
+  background-color: white;
+  border: solid;
+  border-color: $color-site;
+  border-width: 0.15vw;
+  color: #F75C49;
+  padding: 9px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+
+  &:hover{
+      background-color: $color-site;
+      color: white;
+  }
+}
+.navbar {
+  @include Horizontal();
+  align-items: center;
+  a {
+    font-weight: bold;
+    color: $color-site;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 0.5vw;
+    
+    &:hover {
+      color: #b34536;
+      }
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    li {
+      padding: 1.5rem 1.5rem 1.5rem 0;
+      list-style-type: none;
+
+      &:hover, &:active {
+        color: #b34536;
+      }
+    }
+  }
+}
+
+
+  
