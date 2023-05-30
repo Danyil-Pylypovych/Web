@@ -1,0 +1,363 @@
+$color-site: #F75C49;
+$header-font: serif;
+$content-font: Arial;
+$landslide: 16.6%;
+
+@mixin Horizontal(){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a{
+    cursor: pointer;
+}
+
+body{
+    margin-left: $landslide;
+    margin-right: $landslide;
+}
+
+.button, input[type=submit]{
+    background-color: white;
+    border: solid;
+    border-color: $color-site;
+    border-width: 0.15vw;
+    color: #F75C49;
+    padding: 9px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+
+    &:hover{
+        background-color: $color-site;
+        color: white;
+    }
+}
+
+header{
+    @include Horizontal();
+    h1{
+        font-family: $header-font;
+        font-weight: bolder;
+        color: white;
+        -webkit-text-stroke: 1px $color-site;
+        text-shadow: 1px 1px black;
+        font-size: 40px;
+
+        &:hover{
+            text-shadow: 2px 1px black, -2px 1px $color-site;
+        }
+    }
+
+    form{
+        min-width: 70%;
+        @include Horizontal();
+        justify-content: right;
+        align-items: center;
+        *{
+            margin: 5px;
+        }
+    }
+
+    input[type=submit]{
+        font-size: 16px;
+    }
+
+    input[type=text]{
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+
+        &:hover{
+            width: 60%;
+        }
+    }
+}
+
+nav{
+    @include Horizontal();
+    align-items: center;
+    a{
+        font-weight: bold;
+        color: $color-site;
+        font-size: 20px;
+        text-decoration: none;
+        margin-right: 0.5vw;
+
+        &:hover{
+            color: #b34536;
+        }
+    }
+}
+
+article{
+    h1{
+        align-self: center;
+    }
+
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+    &::before{
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: black;
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+.teacher{
+    a{
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        border-color: $color-site;
+        border-width: 5px;
+        border-style: solid;
+        width: 10vw;
+        height: 10vw;
+        overflow: hidden;
+
+        .img{
+            background-image: url('noavatar.jpg');
+            background-size: cover;
+            transition: 0.3s all;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover{
+            .img{
+                transform: scale(1.25);
+            }
+            border-color: #b34536;
+        }
+    }
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vw;
+}
+
+#teachers{
+    display: flex;
+    flex-direction: column;
+    #filter{
+        @include Horizontal();
+        justify-content: flex-start;
+        .filter-element{
+            @include Horizontal();
+            align-items: center;
+            *{
+                padding: 5px;
+            }
+            border-right: 1.7px dotted rgb(83,83,83);
+            padding: 0.5vw 1vw 0.5vw 1vw;
+            font-family: $content-font;
+            font-weight: bolder;
+            color: rgb(120,120,120);
+            font-size: 13px;
+            &:last-of-type{
+                border-right: none;
+            }
+            select{
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+            &:hover{
+                color: black;
+            }
+        }
+    }
+
+    #list-teachers{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+}
+
+#statistics{
+    display: flex;
+    flex-direction: column;
+
+    table{
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        tbody tr:nth-child(odd){
+            background: #eee;
+        }
+        td, th{
+            padding: 0.5rem;
+            text-align: center;
+        }
+        th{
+            border-bottom: solid;
+            border-color: black;
+
+            &:hover{
+                border-width: 7px;
+            }
+        }
+    }
+
+    nav{
+        @include Horizontal();
+        justify-content: left;
+        a{
+            color: #1096d0;
+            font-size: small;
+        }
+    }
+}
+
+#favorites{
+    display: flex;
+    flex-direction: column;
+
+    .slider{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .items-slider{
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .Teacher{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        margin: 1em;
+        padding: 0.5em;
+        border-radius: 10px;
+        box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5);
+    }
+
+    a{
+        font-size: 40px;
+        color: #333;
+    }
+
+    .slid-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1vw 0 1vw;
+    }
+
+    #prev{
+        left: 0;
+    }
+
+    #next{
+        right: 0;
+    }
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(56, 56, 56, 0.7);
+    backdrop-filter: blur(5px);
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+
+    &:target{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .content{
+        position: absolute;
+        background: white;
+        width: 400px;
+        height: 700px;
+        border-radius: 4px;
+        header{
+            @include Horizontal();
+            background-color: rgb(40, 40, 40);
+            color: white;
+            font-family: $content-font;
+            align-items: center;
+            padding: 0vh 1vw;
+
+            .box-close{
+                font-size: 30px;
+                color: white;
+                text-decoration: none;
+
+                &:hover{
+                    color: $color-site;
+                }
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-items: flex-start;
+            padding: 1vh 1vw;
+            
+            .fields-country-city-email-phone{
+                @include Horizontal();
+            }
+
+            .fields{
+                display: flex;
+                flex-direction: column;
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+                select, input{
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    resize: vertical;
+                }
+            }
+
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+
+            figure{
+                text-align: center;
+                
+            }
+        }
+    }
+}

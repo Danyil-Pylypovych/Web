@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="lab_2_style.css">
+        <title>Lab_2</title>
+    </head>
+    <body>
+        <header>
+            <h1>Teachinder</h1>
+            <from>
+                <input type="text" placeholder="Name, note or age to search...">
+                <input type="submit" value="Search">
+            </from>
+        </header>
+        <nav>
+            <div>
+                <a href="#teachers">Teachers</a>
+                <a href="#statistics">Statastics</a>
+                <a href="#favorites">Favorites</a>
+                <a href="#about">About</a>
+            </div>
+            <a class="button" href="#add-teacher-popup">
+                Add teacher
+            </a>
+        </nav>
+        <main>
+            <article id="teachers">
+                <h1>Top teachers</h1>
+                <div id="filter">
+                    <div class="filter-element">
+                        <label>Age</label>
+                        <select name="age" id="age">
+                            <option value="young">18-31</option>
+                            <option value="adult">32-59</option>
+                            <option value="old">60-75</option>
+                        </select>
+                    </div>
+                    <div class="filter-element">
+                        <label>Region</label>
+                        <select name="region" id="region">
+                            <option value="europe">Europe</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Americas">Americas</option>
+                            <option value="MediterraneanAndMiddleEast">Mediterranean & Middle East</option>
+                        </select>
+                    </div>
+                    <div class="filter-element">
+                        <label>Sex</label>
+                        <select name="sex" id="sex">
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                            <option value="unknown">I don't want to specify</option>
+                        </select>
+                    </div>
+                    <div class="filter-element">
+                        <input type="checkbox">
+                        <label>Only with photo</label>
+                    </div>
+                    <div class="filter-element">
+                        <input type="checkbox">
+                        <label>Only favourite</label>
+                    </div>
+                </div>
+                <div id="list-teachers">
+                    <figure class="teacher">
+                        <a href="#compact-card-popup">
+                            <img class="img">
+                        </a>
+                        <figcaption>
+                            Name
+                            <label>subject</label>
+                            <label>contry</label>
+                        </figcaption>
+                    </figure>
+                    <figure class="teacher">
+                        <a href="#compact-card-popup">
+                            <img class="img">
+                        </a>
+                        <figcaption>
+                            Name
+                            <label>subject</label>
+                            <label>contry</label>
+                        </figcaption>
+                    </figure>
+                    <figure class="teacher">
+                        <a href="#compact-card-popup">
+                            <img class="img">
+                        </a>
+                        <figcaption>
+                            Name
+                            <label>subject</label>
+                            <label>contry</label>
+                        </figcaption>
+                    </figure>
+                    <figure class="teacher">
+                        <a href="#compact-card-popup">
+                            <img class="img">
+                        </a>
+                        <figcaption>
+                            Name
+                            <label>subject</label>
+                            <label>contry</label>
+                        </figcaption>
+                    </figure>
+                    <figure class="teacher">
+                        <a href="#compact-card-popup">
+                            <img class="img">
+                        </a>
+                        <figcaption>
+                            Name
+                            <label>subject</label>
+                            <label>contry</label>
+                        </figcaption>
+                    </figure>
+                    <figure class="teacher">
+                        <a href="#compact-card-popup">
+                            <img class="img">
+                        </a>
+                        <figcaption>
+                            Name
+                            <label>subject</label>
+                            <label>contry</label>
+                        </figcaption>
+                    </figure>
+                    <figure class="teacher">
+                        <a href="#compact-card-popup">
+                            <img class="img">
+                        </a>
+                        <figcaption>
+                            Name
+                            <label>subject</label>
+                            <label>contry</label>
+                        </figcaption>
+                    </figure>
+                    <figure class="teacher">
+                        <a href="#compact-card-popup">
+                            <img class="img">
+                        </a>
+                        <figcaption>
+                            Name
+                            <label>subject</label>
+                            <label>contry</label>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article id="statistics">
+                <h1>Statistics</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Speciality</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Nationality</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                            <td>A</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav>
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <label>...</label>
+                    <a href="">Last</a>
+                </nav>
+            </article>
+            <article id="favorites">
+                <h1>Favorites</h1>
+                <div class="slider">
+                    <a id="prev" class="slide-btn">&#10094;</a>
+                    <div class="items-slider">
+                        <figure class="teacher">
+                            <a href="#compact-card-popup">
+                                <img class="img">
+                            </a>
+                            <figcaption>
+                                Name
+                                <label>subject</label>
+                                <label>contry</label>
+                            </figcaption>
+                        </figure>
+                        <figure class="teacher">
+                            <a href="#compact-card-popup">
+                                <img class="img">
+                            </a>
+                            <figcaption>
+                                Name
+                                <label>subject</label>
+                                <label>contry</label>
+                            </figcaption>
+                        </figure>
+                        <figure class="teacher">
+                            <a href="#compact-card-popup">
+                                <img class="img">
+                            </a>
+                            <figcaption>
+                                Name
+                                <label>subject</label>
+                                <label>contry</label>
+                            </figcaption>
+                        </figure>
+                        <figure class="teacher">
+                            <a href="#compact-card-popup">
+                                <img class="img">
+                            </a>
+                            <figcaption>
+                                Name
+                                <label>subject</label>
+                                <label>contry</label>
+                            </figcaption>
+                        </figure>
+                        <figure class="teacher">
+                            <a href="#compact-card-popup">
+                                <img class="img">
+                            </a>
+                            <figcaption>
+                                Name
+                                <label>subject</label>
+                                <label>contry</label>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <a id="next" class="slide-btn">&#10095;</a>
+                </div>
+            </article>
+            <article id="about">
+                <h1>About</h1>
+                <p>
+                    Help me! HELP ME!!!
+                </p>
+                <p>
+                    Olá, olá La-la-lala, lala-la-la-la Lala-la-lala-la-la La-la-la, lala-la, la Lala-la-la-la Lala-la, la-la-la-la Leggo Leggo Leggo Leggo
+                </p>
+                <p>
+                    World Cup (uh), World Cup (uh), World Cup (uh), World Cup (uh) World Cup (uh), World Cup (uh), World Cup (uh), World Cup (uh) World 
+                    Cup, it's time to play football World Cup, it's time to play football World Cup (uh), World Cup (uh), World Cup (uh), World Cup (uh)
+                </p>
+            </article>
+        </main>
+        <footer>
+            <nav>
+                <div>
+                    <a href="#teachers">Teachers</a>
+                    <a href="#statastics">Statastics</a>
+                    <a href="#favorites">Favorites</a>
+                    <a href="#about">About</a>
+                </div>
+                <a class="button" href="#add-teacher-popup">
+                    Add teacher
+                </a>
+            </nav>
+        </footer>
+
+        <div id="add-teacher-popup" class="modal">
+            <div class="content">
+                <header class="header-block">
+                    <h2>Add Teacher</h2>
+                    <a href="#" class="box-close">x</a>
+                </header>
+                <form id="form-teacher">
+                    <div class="fields-name-speciality">
+                        <p>Name</p>
+                        <input class="form" type="text" id="nameTeacher" placeholder="Enter name" name="nameTeacher">
+                    </div>
+                    <div class="fields-name-speciality">
+                        <p>Speciality</p>
+                        <select class="form" id="speciality" name="speciality" size="1">
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="fields-country-city-email-phone">
+                        <div class="fields-country-city">
+                            <div class="field">
+                                <p>Country</p>
+                                <select class="form" id="country" name="country" size="1">
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <p>City</p>
+                                <input class="form" id="city" type="text" name="city">
+                            </div>
+                        </div>
+                        <div class="fields-email-phone">
+                            <div class="field">
+                                <p>Email</p>
+                                <input class="form" id="email" type="email" name="email">
+                            </div>
+                            <div class="field">
+                                <p>Phone</p>
+                                <input class="form" id="phone" type="tel" name="phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fields-date-sex-background">
+                        <div class="field">
+                            <p>Date of birth</p>
+                            <input class="form" id="date-of-birth" type="date" name="date-of-birth">
+                        </div>
+                        <div class="field">
+                            <span>
+                                <p>Sex</p>
+                                <label for="m">male</label>
+                                <input class="form" type="radio" name="sex" id="m" value="male">
+                                <label for="f">female</label>
+                                <input class="form" type="radio" name="sex" id="f" value="female">
+                            </span>                                    
+                        </div>
+                        <div class="field">
+                            <span>
+                                <label>background color</label>
+                                <input class="form" id="background-color" type="color" name="background-color">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <p>Notes (optional)</p>
+                        <textarea class="form" id="notes" name="notes" cols="40" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <button class="button" type="submit">
+                            Add
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="compact-card-popup" class="modal">
+            <div class="content">
+                <header>
+                    <h2>Compact card</h2>
+                    <a href="#" class="box-close">x</a>
+                </header>
+                <form>
+                    <figure>
+                        <img src="noavatar.jpg">
+                        <figcaption>
+                            <h2>Name</h2>
+                        </figcaption>
+                    </figure>
+                    <a class="button" href="#full-card-popup">
+                        Full card
+                    </a>
+                </form>
+            </div>
+        </div>
+
+        <div id="full-card-popup" class="modal">
+            <div class="content">
+                <header>
+                    <h2>Teacher info</h2>
+                    <a href="#" class="box-close">x</a>
+                </header>
+                <form>
+                    <div>
+                        <div>
+                            <img src="noavatar.jpg">
+                        </div>
+                        <div>
+                            <label>Name</label>
+                            <output name="name-out"></output>
+                            
+                        </div>
+                        <div>
+                            <label>Speciality</label>
+                            <output name="speciality-out"></output>
+                            
+                        </div>
+                        <div>
+                            <label>City, </label>
+                            <output name="city-out"></output>
+                            <label>Country</label>
+                            <output name="country-out"></output>
+                            
+                        </div>
+                        <div>
+                            <label>Age, </label>
+                            <output name="age-out"></output>
+                            <label>Sex</label>
+                            <output name="sex-out"></output>
+                            <output name="email-out"></output>
+                            
+                        </div>
+                        <div>
+                            <label>Telephone</label>
+                            <output name="phone-out"></output>
+                        </div>
+                        <div class="notes">
+                            <label>Comment</label>
+                            <output name="comment-out"></output>
+                        </div>
+                        <div class="location">
+                            <label>Location</label>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68783443136!2d30.252510061496128!3d50.401699044222795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2snl!4v1679307881581!5m2!1sru!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+                </form>
+                
+            </div>
+        </div>
+    </body>
+</html>
