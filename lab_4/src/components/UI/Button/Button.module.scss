@@ -1,0 +1,19 @@
+$color-site: #F75C49;
+
+.button {
+  background-color: white;
+    border: solid;
+    border-color: $color-site;
+    border-width: 0.15vw;
+    color: #F75C49;
+    padding: 9px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+
+    &:hover{
+        background-color: $color-site;
+        color: white;
+    }
+}
