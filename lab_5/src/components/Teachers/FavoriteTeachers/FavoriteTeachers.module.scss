@@ -1,0 +1,73 @@
+.favourite-teachers {
+  display: flex;
+  flex-direction: column;
+    h1{
+        align-self: center;
+    }
+
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+    &::before{
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: black;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+  .favourite-teachers__scroll-list {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    @media only screen and (max-device-width: 728px) {
+
+      grid-template-columns: repeat(1, 1fr);
+      li:not(:nth-child(3)) {
+        display: none;
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    &>span {
+      position: absolute;
+      font-size: inherit;
+      top: 40%;
+      font-size: 2rem;
+      border: none;
+      &:hover{
+        background-color: inherit;
+        color: #be3629;
+      }
+    }
+
+
+    .left_arrow {
+      left: -3rem
+    }
+
+    .right_arrow {
+      right: -3rem;
+    }
+    @media only screen and (max-device-width: 728px) {
+      .left_arrow {
+        left: 0
+      }
+
+      .right_arrow {
+        right:0;
+      }
+    }
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}

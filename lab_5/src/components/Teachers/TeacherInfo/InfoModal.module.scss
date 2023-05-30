@@ -1,0 +1,68 @@
+$color-site: #F75C49;
+
+.full-teacher-card {
+  section {
+    margin-bottom: 1rem
+  }
+
+  .full-teacher-card__header {
+    display: flex;
+    padding-bottom: 1rem;
+
+    .teacher-card__img {
+      flex-basis: 33.33333%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .teacher-card__info {
+      margin-left: 1rem;
+
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      p, a {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+  button {
+    background-color: white;
+    border: solid;
+    border-color: $color-site;
+    border-width: 0.15vw;
+    color: #F75C49;
+    padding: 9px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+
+    &:hover{
+        background-color: $color-site;
+        color: white;
+    }
+  }
+  section a {
+    border-bottom: dotted 1px blue;
+    text-decoration: none;
+  }
+}

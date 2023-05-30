@@ -1,0 +1,19 @@
+.top-teachers {
+  display: flex;
+  flex-direction: column;
+    h1{
+        align-self: center;
+    }
+
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+    &::before{
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: black;
+        width: 40%;
+        margin: 0 auto;
+    }
+}
