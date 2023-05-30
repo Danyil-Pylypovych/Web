@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task_1</title>
+    </head>
+    <body>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="addForm">
+                <header class="headerBlock">
+                    <h1>Add Teacher</h1>
+                </header>
+            </div>
+
+            <div class="formFields">
+                <form id="formTeacher" action="#" method="post" enctype="multipart/form-data">
+                    <div class="fieldsNameSpeciality">
+                        <p>Name</p>
+                        <input class="form" type="text" id="nameTeacher" placeholder="Enter name" name="nameTeacher">
+                    </div>
+                    <div class="fieldsNameSpeciality">
+                        <p>Speciality</p>
+                        <select class="form" id="speciality" name="speciality" size="1">
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="fieldsCountryCityEmailPhone">
+                        <div class="fieldsCountryCity">
+                            <div class="field">
+                                <p>Country</p>
+                                <select class="form" id="country" name="country" size="1">
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <p>City</p>
+                                <input class="form" id="city" type="text" name="city">
+                            </div>
+                        </div>
+                        <div class="fieldsEmailPhone">
+                            <div class="field">
+                                <p>Email</p>
+                                <input class="form" id="email" type="email" name="email">
+                            </div>
+                            <div class="field">
+                                <p>Phone</p>
+                                <input class="form" id="phone" type="tel" name="phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldsDateSexBackground">
+                        <div class="field">
+                            <p>Date of birth</p>
+                            <input class="form" id="dateOfBirth" type="date" name="dateOfBirth">
+                        </div>
+                        <div class="field">
+                            <span>
+                                <p>Sex</p>
+                                <label for="m">male</label>
+                                <input class="form" type="radio" name="sex" id="m" value="male">
+                                <label for="f">female</label>
+                                <input class="form" type="radio" name="sex" id="f" value="female">
+                            </span>                                    
+                        </div>
+                        <div class="field">
+                            <span>
+                                <label>background color</label>
+                                <input class="form" id="backgroundColor" type="color" name="backgroundColor">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="Comments">
+                        <p>Notes (optional)</p>
+                        <textarea class="form" id="notes" name="notes" cols="25" rows="10"></textarea>
+                    </div>
+                    <div class="button">
+                        <button class="button__content" type="submit">
+                            Add
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </form>
+    </body>
+</html>
